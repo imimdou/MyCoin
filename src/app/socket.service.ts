@@ -19,7 +19,7 @@ export class SocketService {
         	var content = JSON.parse(event.data);
         	var data = content.content.split("~");
 
-            this.listener.emit({"type": "message", "content":content.content);
+            this.listener.emit({"type": "message", "content":content.content});
         }
     }
 
