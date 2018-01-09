@@ -1,7 +1,24 @@
-<h2>BBBBITTTT KOIN BURASI</h2>
-<p>
-Koinim hesabınız oluşturuldu. Başlamadan önce e-posta adresinizin doğrulanması gerekiyor. Size gönderdiğimiz e-postadaki bağlantıya tıklayarak bu işlemi gerçekleştirebilirsiniz. Bu işlemi zaten yaptıysanız lütfen buraya tıklayın veya sayfayı yenileyin.
+<h2>BIT KOIN BURASI</h2>
 
-Eğer doğrulama e-postası size ulaşmadıysa buraya tıklayarak tekrar deneyebilirsiniz.
-{{title}}
-</p>
+
+<!-- Example Notifications Card-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-bell-o"></i> 1 Bitcoin in $</div>
+            <div class="list-group list-group-flush small">
+              
+              <a *ngFor="let message of bitcoinMsgs" class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <strong>{{message[0]}}</strong>
+                    <div class="text-muted smaller">{{message[1]}}</div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+      <!-- Example DataTables Card-->
+      
